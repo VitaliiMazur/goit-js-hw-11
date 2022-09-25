@@ -48,12 +48,16 @@ function onFormSubmit(evt) {
 
 function onButtonLoadMore(evt) {
   evt.preventDefault();
+  refs.loadMoreBtn.classList.add('visually-hidden');
   fetchImages.incrementPage();
+
   fetchImages
     .getPhotos()
     .then(data => {
       renderingCards(data);
+      refs.loadMoreBtn.classList.remove('visually-hidden');
     })
+
     .catch(showLastPageMessage);
 }
 
