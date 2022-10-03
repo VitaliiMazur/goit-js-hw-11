@@ -1,26 +1,19 @@
-.search-form {
+.search-form{
   display: flex;
   justify-content: center;
   text-align: center;
-  padding: 20px;
-  background-color: #3f08f6;
-  margin-bottom: 30px;
-  position: fixed;
-  width: 100%;
+  padding: 10px;
+  background-color: #5130bb;
+  margin-bottom: 40px;
 }
-.search-form input {
-  padding: 5px;
+
+.search-form input{
+  border: none;
   outline: none;
 }
 
-.fixed__position {
-  position: relative;
-}
-
-.search-btn {
+.search-btn{
   padding: 5px;
-}
-
-.search-icon {
-  text-align: center;
+  border: none;
+  // outline: none;
 }
